@@ -12,6 +12,10 @@ app.post("/listenerserver", (req, res) => {
   console.log("Received POST request with body:", req.body);
   res.send("Request received successfully!");
 });
+app.get("/listenerserver", (req, res) => {
+  
+  res.send("Request received successfully! on get");
+});
 
 // Start the server
 app.listen(port, () => {
