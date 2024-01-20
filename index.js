@@ -14,7 +14,7 @@ app.post("/listenerserver", (req, res) => {
 });
 app.get("/listenerserver", (req, res) => {
   
-  res.send("Request received successfully! on get");
+  console.log("Request received successfully! on get");
 });
 
 // Start the server
